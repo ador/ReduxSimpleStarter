@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class BookList extendes Component {
+export default class BookList extends Component {
   renderList() {
     return this.props.books.map(
       (book) => { return(
@@ -9,13 +9,12 @@ export default class BookList extendes Component {
     )
   }
 
-
   render() {
-    return {
+    return (
       <ul className="list-group col-sm-4">
         {this.renderList()}
       </ul>
-    }
+    )
   }
 
 }
