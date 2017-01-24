@@ -3,6 +3,12 @@ import { connect } from 'react-redux';
 
 class BookDetail extends Component {
   render() {
+    if (!this.props.book) {
+      return (
+        <div> No book selected yet.. </div>
+      );
+    }
+
     return (
       <div>
         <h3>Book detail </h3>
